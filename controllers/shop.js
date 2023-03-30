@@ -16,6 +16,9 @@ exports.getProduct = (req, res, next) => {
     res.render('shop/product-detail', {product: product, pageTitle: product.title, path: '/products'})
   });
   
+    console.log(product)
+  });
+  res.redirect('/')
 }
 
 exports.getIndex = (req, res, next) => {
